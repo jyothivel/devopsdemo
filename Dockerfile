@@ -14,7 +14,7 @@ RUN yum -y install php php-mysql
 EXPOSE 80
 
 # Add the application code
-COPY ./simple-lamp /var/www/html/simple-lamp
+COPY ./devopsdemo /var/www/html/devopsdemo
 COPY ./httpd.conf /etc/httpd/conf
 
 # Simple startup script to avoid some issues observed with container restart

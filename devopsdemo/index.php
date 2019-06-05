@@ -162,7 +162,7 @@ if (isset($_SESSION['username']))
 		echo "<td><H1>Demo Application for Charlie</H1></td>";
 		echo "<td align='right'>";
 			echo "$username<br>";
-			echo "<a href='index.php?logout=yes'>Logout</a>";
+			echo "<a href='demo/index.php?logout=yes'>Logout</a>";
 		echo "</td>";
 	echo "</tr>";
 	echo "</table>";

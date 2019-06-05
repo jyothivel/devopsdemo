@@ -215,8 +215,6 @@ else
 }
 
 // Display the images
-echo "<pre>Testing update</pre>";
-echo "<br>&nbsp;<br>";
 if ($storage_option == "hd")
 {
 	// Images are on hard disk

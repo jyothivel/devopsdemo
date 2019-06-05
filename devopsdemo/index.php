@@ -159,7 +159,7 @@ if (isset($_SESSION['username']))
 	// This section is shown when user is login
 	echo "<table width=100% border=0>";
 	echo "<tr>";
-		echo "<td><H1>Demo Application for Charlie</H1></td>";
+		echo "<td><H1>Demo Application for Avaya</H1></td>";
 		echo "<td align='right'>";
 			echo "$username<br>";
 			echo "<a href='demo/index.php?logout=yes'>Logout</a>";

@@ -1,0 +1,17 @@
+stages:
+- name: DevOpsAASTest
+  steps:
+  - runScriptConfig:
+      image: devopsdemo:latest
+      shellScript: |-
+        echo "Running shell script"
+- name: Publish image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: devopsdemo:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deploy/deployment.yaml

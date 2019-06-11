@@ -2,9 +2,8 @@ stages:
 - name: DevOpsAASTest
   steps:
   - runScriptConfig:
-      image: devopsdemo:latest
-      shellScript: |-
-        echo "Running shell script"
+      image: jyothivel/devopsdemo:latest
+      shellScript: echo "Running shell script"
 - name: Publish image
   steps:
   - publishImageConfig:

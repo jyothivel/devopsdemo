@@ -13,4 +13,4 @@ stages:
 - name: Deploy
   steps:
   - applyYamlConfig:
-      path: ./deploy/deployment.yaml
+      path: ./deployment.yaml

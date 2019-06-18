@@ -5,4 +5,5 @@
 # if it thinks it is already running.
 rm -rf /run/httpd/* /tmp/httpd*
 
+echo "Kicking off httpd"
 exec /usr/sbin/apachectl -DFOREGROUND

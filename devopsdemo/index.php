@@ -117,7 +117,7 @@ function add_upload_info($db, $username, $filename)
 function retrieve_recent_uploads($count)
 {
 	// Print a message so that the user knows these records come from the DB.
-	echo "Getting latest $count records from database.<br>";
+	echo "Getting ALL the latest $count records from database.<br>";
 
 	// Geting the latest records from the upload_images table
         $mysqli = new mysqli("137.135.109.135","simplelamp","netsaint-1","simple_lamp");

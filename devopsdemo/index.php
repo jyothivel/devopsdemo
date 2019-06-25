@@ -162,7 +162,7 @@ if (isset($_SESSION['username']))
 		echo "<td><H1>Demo Application for DevOpsAAS</H1></td>";
 		echo "<td align='right'>";
 			echo "$username<br>";
-			echo "<a href='demo/index.php?logout=yes'>Logout</a>";
+			echo "<a href='index.php?logout=yes'>Logout</a>";
 		echo "</td>";
 	echo "</tr>";
 	echo "</table>";
@@ -170,7 +170,7 @@ if (isset($_SESSION['username']))
 
 	echo "In this demo, we assume that you are uploading images files with file extensions such as JPG, JPEG, GIF, PNG.<br>&nbsp;<br>";
 
-	echo "<form action='demo/index.php' method='post' enctype='multipart/form-data'>";
+	echo "<form action='index.php' method='post' enctype='multipart/form-data'>";
 	echo "<input type='file' id='fileToUpload' name='fileToUpload' id='fileToUpload' onchange='check_file_type();'>";
 	echo "<input type='submit' value='Upload Image' id='submit_button' name='submit_button' disabled>";
 	echo "</form>";
@@ -183,7 +183,7 @@ else
 	echo "<tr>";
 		echo "<td><H1>$server</H1></td>";
 		echo "<td align='right'>";
-			echo "<form action='demo/index.php' method='post'>";
+			echo "<form action='index.php' method='post'>";
 			echo "Enter Your Name: <br>";
 			echo "<input type='text' id='username' name ='username' size=20><br>";
 			echo "<input type='submit' value='login'/>";

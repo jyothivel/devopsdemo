@@ -2,7 +2,7 @@ stages:
 - name: DevOpsAASTest
   steps:
   - runScriptConfig:
-      image: jyothivel/devopsdemo:${CICD_EXECUTION_SEQUENCE}
+      image: jyothivel/devopsdemo:latest
       shellScript: echo "Running shell script"
 - name: Publish image
   steps:

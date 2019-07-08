@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: devopsdemo-app
-  type: NodePort
+  type: loadbalancer
   ports:
     - protocol: TCP
       port: 80

@@ -5,11 +5,14 @@ metadata:
 spec:
   selector:
     app: devopsdemo-app
-  type: loadbalancer
+  type: Loadbalancer
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
+  selector:
+    run: devopsdemo-app-svc   
+      
 ---
 apiVersion: apps/v1
 kind: Deployment

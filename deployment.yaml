@@ -28,7 +28,7 @@ spec:
         app: devopsdemo-app
     spec:
       imagePullSecrets:
-      - name: pipeline-docker-registry
+      - name: shivandemo
       containers:
       - name: devopsdemoapp
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}

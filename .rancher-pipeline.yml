@@ -10,7 +10,10 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: devopsdemo:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: index.docker.io
 - name: Deploy
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
+notification: {}

@@ -16,4 +16,8 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
+timeout: 600
+branch:
+  include:
+  - Master
 notification: {}

@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: devopsdemo-app-lb
+  name: devopsdemo-app
 spec:
   selector:
     app: devopsdemo-app

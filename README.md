@@ -7,4 +7,4 @@ Git push - triggers -> rancher pipeline -> created docker image -> pushes to doc
 Added webhooks
 Updated keys
 
-Adding a pipeline to new rancher cluster
+#Adding a pipeline to new rancher cluster
